@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "176453751599",
+    "firebase_url": "https://iraikuralfm-default-rtdb.firebaseio.com",
+    "project_id": "iraikuralfm",
+    "storage_bucket": "iraikuralfm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176453751599:android:3db2f94b0bb44aff0c87da",
+        "android_client_info": {
+          "package_name": "com.example.iraikural"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAije28I2neoRyLOqs4xoAqefJ4pBLoGtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

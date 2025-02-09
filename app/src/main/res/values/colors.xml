@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="splashBackgroundColor">#790101</color> <!-- Dark red for splash screen -->
+    <color name="mainBackgroundColor">#5B0000</color> <!-- Dark red for main activity -->
+    <color name="verseTextColor">#000000</color> <!-- Black text -->
+    <color name="radioNameColor">#FF0000</color> <!-- Red text -->
+    <color name="playButtonColor">#FFC600</color> <!-- Golden yellow -->
+    <color name="partnersTextColor">#666666</color>
+</resources>

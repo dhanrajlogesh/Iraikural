@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackgroundColor"
+    android:gravity="center"
+    tools:context=".SecondFragment">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/image"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"/>
+
+    <!-- Verse of the Day -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verse of the Day"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textVerse"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verse_background"
+        android:text="If anyone acknowledges that Jesus is the Son of God, God lives in him and he in God. - 1 John 4:15"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Social Media Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Our Social Media Updates"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/btnInstagram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/instagram"/>
+
+        <ImageView
+            android:id="@+id/btnFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/btnWhatsApp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/whatsapp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/btnYouTube"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/youtube"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- About Us Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It is a Christian broadcast Radio FM from Germany"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.iraikural.com"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send your Prayer Request to"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iraikuralmedia@gmail.com"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+</LinearLayout>
