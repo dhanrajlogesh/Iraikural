@@ -1,0 +1,18 @@
+<!-- res/drawable/logo_box_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid or Gradient Background -->
+    <gradient
+        android:startColor="#6A2213"
+        android:angle="45"
+    />
+
+    <!-- Rounded Corners -->
+    <corners
+        android:radius="16dp"
+    />
+
+    <!-- Border -->
+    <stroke
+        android:width="2dp"
+    />
+</shape>

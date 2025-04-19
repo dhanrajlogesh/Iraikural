@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_screen"
     android:gravity="center"
-    android:padding="20dp"
+    android:padding="40dp"
     tools:context=".SecondFragment">
 
     <!-- Verse of the Day -->
@@ -16,52 +16,41 @@
         android:layout_height="wrap_content"
         android:text="Verse of the Day"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:gravity="center"/>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
 
     <TextView
         android:id="@+id/textVerse"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
         android:background="@drawable/verse_background"
         android:text="If anyone acknowledges that Jesus is the Son of God, God lives in him and he in God. - 1 John 4:15"
-        android:padding="12dp"
-        android:textSize="16sp"
+        android:padding="18dp"
+        android:textSize="20sp"
         android:textColor="@android:color/black"
         android:gravity="center"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="10dp"/>
 
+    <!-- Daily Updates -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daily Updates"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:gravity="center"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
-
 
     <!-- Logo -->
     <ImageView
         android:id="@+id/imageLogo"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_gravity="center_horizontal"
-        android:scaleType="fitCenter"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"/>
 
     <!-- Social Media Section -->
     <TextView
@@ -69,53 +58,45 @@
         android:layout_height="wrap_content"
         android:text="Check Our Social Media Updates"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
 
         <ImageView
             android:id="@+id/btnInstagram"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/instagram"/>
 
         <ImageView
             android:id="@+id/btnFacebook"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/facebook"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="20dp"/>
 
         <ImageView
             android:id="@+id/btnWhatsApp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/whatsapp"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="20dp"/>
 
         <ImageView
             android:id="@+id/btnYouTube"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/youtube"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="20dp"/>
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
 
     <!-- About Us Section -->
     <TextView
@@ -123,9 +104,9 @@
         android:layout_height="wrap_content"
         android:text="About Us"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"/>
 
     <TextView
@@ -133,7 +114,7 @@
         android:layout_height="wrap_content"
         android:text="It is a Christian broadcast Radio FM from Germany"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:gravity="center"/>
 
     <TextView
@@ -142,21 +123,19 @@
         android:layout_height="wrap_content"
         android:text="www.iraikural.com"
         android:textColor="@android:color/holo_blue_light"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:gravity="center"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="10dp"/>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="10dp"/>
-
+    <!-- Prayer Request Section -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="send your Prayer Request to"
+        android:text="Send your Prayer Request to"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
-        android:gravity="center"/>
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/textEmail"
@@ -164,7 +143,6 @@
         android:layout_height="wrap_content"
         android:text="iraikuralmedia@gmail.com"
         android:textColor="@android:color/holo_blue_light"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:gravity="center"/>
-
 </LinearLayout>

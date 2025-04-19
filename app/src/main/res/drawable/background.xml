@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow Effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />  <!-- Slightly smaller corners -->
+            <solid android:color="#66000000"/> <!-- Soft shadow -->
+        </shape>
+    </item>
+
+    <!-- Background Layer -->
+    <item android:top="1dp" android:bottom="1dp" android:left="1dp" android:right="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp"/>  <!-- Tighter corners -->
+            <solid android:color="#6A1B1B"/> <!-- Background color -->
+        </shape>
+    </item>
+
+</layer-list>

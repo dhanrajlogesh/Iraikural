@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_screen"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/verseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By his Grace for his Glory\nPsalms 84:11"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="35dp"
+            android:padding="14dp"
+            android:gravity="center"/>
+
+        <!-- ✅ Logo (Even Bigger for 720dp) -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="450dp"
+            android:layout_height="350dp"
+            android:src="@drawable/iraikural_logo_screen"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="45dp"/>
+
+        <!-- ✅ Waveform Visualization (Wider for 720dp) -->
+        <com.example.iraikural.WaveformView
+            android:id="@+id/waveformView"
+            android:layout_width="450dp"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnPlayPause"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#FFEB3B"
+            android:text="Play"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/partnersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUR PARTNERS"
+            android:textSize="20sp"
+            android:textColor="#CCCCCC"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:id="@+id/partnerAdImage"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,93 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainBackgroundColor"
+    android:background="@drawable/background_screen"
     android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/verseText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
-
-        <!-- Verse Text -->
-        <TextView
-            android:id="@+id/verseText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="By his Grace for his Glory\nPsalms 84:11"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:textColor="#FFFFFF"
-            android:layout_marginTop="20dp"
-            android:gravity="center"/>
-
-        <!-- Logo -->
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/image"
-            android:layout_marginTop="20dp"
-            android:scaleType="fitCenter"/>
-
-        <!-- Visualizer -->
-        <com.example.iraikural.VisualizerView
-            android:id="@+id/visualizer"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@android:color/transparent"/>
-
-        <!-- Play/Pause Button -->
-        <Button
-            android:id="@+id/btnPlayPause"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="Play"
-            android:textSize="18sp"
-            android:backgroundTint="#FFC600"
-            android:textColor="#000000"
-            android:layout_marginTop="20dp"/>
-
-        <!-- Progress Bar -->
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_marginTop="20dp"
-            android:indeterminate="true"
-            android:visibility="gone"
-            android:progressTint="#FFFFFF"/>
-
-        <!-- Partners Text -->
-        <TextView
-            android:id="@+id/partnersText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OUR PARTNERS"
-            android:textSize="16sp"
-            android:textColor="#CCCCCC"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"/>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/adViewPager"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="10dp"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewAds"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"/>
+        android:text="By his Grace for his Glory\nPsalms 84:11"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:gravity="center"/>
 
 
-    </LinearLayout>
-</ScrollView>
+<!-- ✅ Logo Added (Static) -->
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:src="@drawable/iraikural_logo_screen"
+    android:scaleType="fitCenter"
+    android:layout_marginTop="30dp"/>
+
+
+    <!-- ✅ Waveform Visualization -->
+    <com.example.iraikural.WaveformView
+        android:id="@+id/waveformView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+    android:id="@+id/btnPlayPause"
+    android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#FFEB3B"
+    android:text="Play Radio"
+    android:textColor="#000000"
+    android:textSize="18sp" />
+
+<TextView
+    android:id="@+id/partnersText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="OUR PARTNERS"
+    android:textSize="16sp"
+    android:textColor="#CCCCCC"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="10dp"/>
+
+<ImageView
+    android:id="@+id/partnerAdImage"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:scaleType="fitCenter"
+    android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+    </ScrollView>
